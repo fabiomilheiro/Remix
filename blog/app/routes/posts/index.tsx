@@ -8,6 +8,10 @@ export default function Posts() {
     <>
       <h1>Posts</h1>
 
+      <Link to="admin" className="text-red-600 underline">
+        Admin
+      </Link>
+
       {posts.map((p) => (
         <li key={p.slug}>
           <Link to={`/posts/${p.slug}`} className="text-blue-600 underline">
